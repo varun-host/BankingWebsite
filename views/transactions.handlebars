@@ -1,0 +1,21 @@
+<div class="table">
+    <table class="table table-dark table-striped">
+    <thead>
+    <th>Sender Name</th>
+    <th>Sender Account</th>
+    <th>Receiver Name</th>
+    <th>Receiver Account</th>
+    <th>Amount</th>
+    </thead>
+    {{#each Transaction}}
+    <tr>
+    <td>{{Sendername}}</td>
+    <td>{{Senderaccount}}</td>
+    <td>{{Receivername}}</td>
+    <td>{{Receiveraccount}}</td>
+    <td>{{Amount}}</td>
+    </tr>
+    {{/each}}
+    
+</table>
+</div>

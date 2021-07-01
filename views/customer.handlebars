@@ -1,0 +1,21 @@
+<section id="customer"> 
+    <div class="customer">
+            {{#each customer}}
+        <div class="row row-cols-1 row-cols-md-3 g-2 justify-content-sm-center">
+        
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title"> <b>Name: </b>{{name}}</h4>
+                    <p class="card-text">
+                       <b>Age:       </b>     {{age}}</br>
+                       <b>Email:     </b>     {{email}}</br>
+                       <b>Balance:   </b>     {{balance}}</br>
+                       <b>Account No:</b> {{accountno}}
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br>
+            {{/each}}
+        </div>
+</section>

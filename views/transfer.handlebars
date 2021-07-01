@@ -1,0 +1,18 @@
+<body class="transfer">
+    <div class="content">
+        <form action="/transfer" method="POST" class="formcontent">
+         <p id="error">{{error}}</p>
+         <label for="sender">From</label></br>
+         <input type="text" id="sender" name="sender"></br>
+         <label for="receiver">To</label></br>
+         <input type="text" id="receiver" name="receiver"></br>
+         <label for="amount">Amount</label></br>
+         <input type="text" id="amount" name="amount"></br>
+         <br>
+         <input type="submit" value="Transfer"></br>
+         <p id="success">{{success}}</p>
+         <a class="link" href="/transactions">All Transactions</a>
+        </form>  
+    </div>
+    
+</body>
