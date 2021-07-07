@@ -17,11 +17,5 @@ router.get('/', function(req, res, next) {
     })
     .catch(err => console.log(err));
 });
-// router.get('/', function(req, res, next) {
-//   res.sendFile('/home/leo-007/Desktop/banking_system/public/customer.html')
-//   // res.sendFile('../public/customer.html')
-//   // res.render('customer', { title: 'Express' });
-//   next();
-// });
 
 module.exports = router;
