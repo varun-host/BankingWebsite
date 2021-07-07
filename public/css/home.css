@@ -1,15 +1,18 @@
 
 .customer{
-    background-color: rgb(235, 96, 4);
+    /* background-color: rgb(235, 96, 4); */
+    /* background-color: #af8c9d; */
+/* background-image: linear-gradient(315deg, #af8c9d 0%, #8cacac 74%); */
+background-color: #7f5a83;
+background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+
     /* width: 100%; */
     
 }
 .homepage{
-    /* background-image: url("../image/hero-bg.png.webp"); */
-    /* background-image: url('../image/home.jpg');
     
     background-repeat: no-repeat;
-    background-size: cover; */
+    background-size: cover; 
     color: #D53567;
     /* background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(109,9,121,1) 35%, rgba(0,212,255,1) 100%);  */
@@ -35,47 +38,22 @@
     position: fixed;
     
 }
-/* .text{
-    margin-left: 50px ;
-   
-    font-size: 3rem;
-    color: #ff2e00;
-} */
+
+
 .transfer{
-    /* background-image: url('../image/transaction.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 52vh;
-    width: 100%;
-    color: #fff; */
-    background: linear-gradient(90deg,#FFFF00 6%,#FFA500 25%,#F14444 45%,#D53567 55%,#9A109A 94%);
+    
+    /* background: linear-gradient(90deg,#FFFF00 6%,#FFA500 25%,#F14444 45%,#D53567 55%,#9A109A 94%); */
     /* display: flex; */
+    background-color: #000000;
+background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
     width: 100%;
     
     /* align-items: center; */
     /* justify-content: center; */
 }
 .content {
-    /* display: flex; 
-    justify-content: center;
-    width: 500px;
-    height: 400px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-   margin: auto;
-  
-   position: absolute;
-   text-align: center;
+   
 
-   
-   background-color: rgb(250, 142, 102);
-   
-   border: 2px black solid;
-   
-*/
 display: flex;
 justify-content: center;
 position: absolute;
@@ -85,7 +63,7 @@ left: 0;
 right: 0;
 margin: auto;
   width: 500px;
-  height: 400px;
+  height: 450px;
   padding: 10px;
   border-radius: 20px;
   color: #fff;
@@ -108,7 +86,8 @@ margin: auto;
    font-size: 1.3rem;
 }
 #success{
-    color: green;
+  font-size: 18px;
+    color: rgb(16, 236, 16);
 }
 #error{
     color: red;
@@ -116,9 +95,29 @@ margin: auto;
 .table{
     margin-top: 10px;
 }
-.link{
-    color: black;
+.btn-link{
+    
+  background-color: #08d;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  cursor: pointer;
+  font-size: 16px;
+  height: 50px;
+  /* margin-top: 5px; */
+  outline: 0;
+  text-align: center;
+  width: 80%;
 }
+.btn-link .link{
+  color: #eee;
+}
+.btn-link:active {
+  background-color: rgb(15, 21, 26);
+}
+
+
 
 .glassCard .card-group {
     position: absolute;

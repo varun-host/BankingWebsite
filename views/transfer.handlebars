@@ -1,6 +1,20 @@
 <body class="transfer">
     <div class="content">
-        <form action="/transfer" method="POST" class="formcontent">
+        <form class="form-signin" action="/transfer" method="POST">
+      <h1 class="h3 mb-3 font-weight-normal">Transaction Details</h1>
+      <p id="error">{{error}}</p>
+      <label for="sender" class="sr-only">From</label>
+      <input type="text" id="sender" class="form-control d-inline-flex p-2" placeholder="Sender" name="sender" required="" autofocus="">
+      <label for="receiver" class="sr-only">To</label>
+      <input type="text" id="receiver" class="form-control" placeholder="Receiver" name="receiver" required="" autofocus="">
+      <label for="amount" class="sr-only">Amount</label>
+      <input type="text" id="amount" class="form-control" placeholder="Amount" name="amount" required="" autofocus=""></br>
+      <button class="btn btn-lg btn-primary btn-block align-items-center" type="submit">Transfer</button>
+      <p id="success">{{success}}</p>
+      <button class="btn-link"><a class="link" href="/transactions">All Transactions</a></button>
+      </br>
+    </form>
+        {{!-- <form action="/transfer" method="POST" class="formcontent">
          <p id="error">{{error}}</p>
          <label for="sender">From</label></br>
          <input type="text" id="sender" name="sender"></br>
@@ -12,7 +26,7 @@
          <input type="submit" value="Transfer"></br>
          <p id="success">{{success}}</p>
          <a class="link" href="/transactions">All Transactions</a>
-        </form>  
+        </form>   --}}
     </div>
     
 </body>

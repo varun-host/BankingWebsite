@@ -56,9 +56,5 @@ router.post('/', async function (req,res)
     console.error(error)
   }
 });
-// router.get('/transactions',async function(req,res){
-//   const newtrans=await Transaction.create({ Sendername:sender.name,Senderaccount:senderaccount,Receivername:receiver.name,Receiveraccount:receiveraccount,Amount:amount})
-//   .then(()=>{res.render('transactions.js',{Transaction})})
-//   .catch((err) => console.error(err))
-// })
+
 module.exports = router;
