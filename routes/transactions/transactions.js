@@ -4,6 +4,9 @@ const { Transaction } = require("../../models/transaction");
 // router.use('/', routes);
 router.get("/", function (req, res) {
   Transaction.findAll({
+    order:[
+      ['id','DESC']
+    ],
     attributes: [
       "Sendername",
       "Senderaccount",
