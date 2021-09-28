@@ -44,7 +44,8 @@ router.post("/", async function (req, res) {
       return res.render("transfer", { error: "Enter the amount correctly" });
     if (sender.balance <= 0)
       return res.render("transfer", { error: "Insufficient balance to send" });
-
+    if(sender.balance-req.body.amount <=0)
+      return res.render("transfer", { error: "Insufficient balance to send" });
     const updateReceiverBalance = parseInt(receiver.balance) + parseInt(amount);
     const updateSenderBalance = parseInt(sender.balance) - parseInt(amount);
     console.log(updateReceiverBalance);
