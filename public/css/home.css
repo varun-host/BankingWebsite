@@ -1,67 +1,44 @@
-
-.customer{
-    /* background-color: rgb(235, 96, 4); */
-    /* background-color: #af8c9d; */
-/* background-image: linear-gradient(315deg, #af8c9d 0%, #8cacac 74%); */
-background-color: #7f5a83;
-background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
-
-    /* width: 100%; */
-    
+.customer {
+  background-color: #7f5a83;
+  background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
 }
-.homepage{
-    
-    background-repeat: no-repeat;
-    background-size: cover; 
-    color: #D53567;
-    /* background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(109,9,121,1) 35%, rgba(0,212,255,1) 100%);  */
+.homepage {
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #d53567;
+  background: #200122; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #6f0000,
+    #200122
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #6f0000,
+    #200122
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-
-    background: #200122; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-      to right,
-      #6f0000,
-      #200122
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to right,
-      #6f0000,
-      #200122
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    height: 61.7vh;
-    width: 100%;
-    
+  height: 61.7vh;
+  width: 100%;
 }
-.footer{
-    position: fixed;
-    
+.footer {
+  position: fixed;
 }
 
-
-.transfer{
-    
-    /* background: linear-gradient(90deg,#FFFF00 6%,#FFA500 25%,#F14444 45%,#D53567 55%,#9A109A 94%); */
-    /* display: flex; */
-    background-color: #000000;
-background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
-    width: 100%;
-    
-    /* align-items: center; */
-    /* justify-content: center; */
+.transfer {
+  background-color: #000000;
+  background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
+  width: 100%;
 }
 .content {
-   
-
-display: flex;
-justify-content: center;
-position: absolute;
-top: 0;
-bottom: 0;
-left: 0;
-right: 0;
-margin: auto;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
   width: 500px;
   height: 450px;
   padding: 10px;
@@ -70,33 +47,32 @@ margin: auto;
   font-size: 18px;
   background: rgba(255, 255, 255, 0.274);
   box-shadow: 10px 10px 20px -10px rgba(255, 255, 255, 0.2);
-  border-right: 1px solid rgba(255,255,255,0.2);
-  border-bottom: 1px solid rgba(255,255,255,0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(20px);
 }
-.formcontent{
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-   margin: 5px;
-    color: black;
-   text-align: center;
-   padding: 10px;
-   font-size: 1.3rem;
+.formcontent {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 5px;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.3rem;
 }
-#success{
+#success {
   font-size: 18px;
-    color: rgb(16, 236, 16);
+  color: rgb(16, 236, 16);
 }
-#error{
-    color: red;
+#error {
+  color: red;
 }
-.table{
-    margin-top: 10px;
+.table {
+  margin-top: 10px;
 }
-.btn-link{
-    
+.btn-link {
   background-color: #08d;
   border-radius: 12px;
   border: 0;
@@ -110,109 +86,106 @@ margin: auto;
   text-align: center;
   width: 80%;
 }
-.btn-link .link{
+.btn-link .link {
   color: #eee;
 }
 .btn-link:active {
   background-color: rgb(15, 21, 26);
 }
 
-
-
 .glassCard .card-group {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    bottom: 10%;
-    transform: translate(-50%, -50%);
-  }
-  
- .glassCard .card {
-    position: relative;
-    height: 270px;
-    width: 450px;
-    border-radius: 25px;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(30px); /* This will produce the blur */
-    border: 2px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-  }
-  
- .card .logo,
- .card .number,
- .card .name,
- .card .from,
- .card .to,
- .card .ring {
-    position: absolute; /* All items inside card should have absolute position */
-  }
-  
- .card .number,
- .card .name,
- .card .from,
-  .card .to {
-    color: rgba(255, 255, 255, 0.897);
-    font-weight: 400;
-    letter-spacing: 2px;
-    text-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
-  }
- .glassCard .logo {
-    top: 35px;
-    color: rgb(255, 255, 255);
-    font-weight: 500;
-    right: 38px;
-    left: 300px;
-    width: 80px;
-    height: auto;
-    font-size: 35px;
-    opacity: 0.8;
-  }
- .glassCard .number {
-    left: 40px;
-    bottom: 70px;
-    font-size: 25px;
-    font-family: "Nunito", sans-serif;
-  }
-  
- .glassCard .name {
-    font-size: 1.1rem;
-    left: 40px;
-    bottom: 35px;
-  }
-  
- .glassCard .from {
-    font-size: 1rem;
-    bottom: 35px;
-    right: 110px;
-  }
-  
- .glassCard .to {
-    font-size: 1rem;
-    bottom: 35px;
-    right: 40px;
-  }
- .glassCard .ring {
-    height: 500px;
-    width: 500px;
-    border-radius: 50%;
-    background: transparent;
-    border: 50px solid rgba(255, 255, 255, 0.1);
-    bottom: -250px;
-    right: -250px;
-    box-sizing: border-box;
-  }
-  
- .glassCard .ring::after {
-    content: "";
-    position: absolute;
-    height: 600px;
-    width: 600px;
-    border-radius: 50%;
-    background: transparent;
-    border: 30px solid rgba(255, 255, 255, 0.1);
-    bottom: -80px;
-    right: -110px;
-    box-sizing: border-box;
-  }
-  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  bottom: 10%;
+  transform: translate(-50%, -50%);
+}
+
+.glassCard .card {
+  position: relative;
+  height: 270px;
+  width: 450px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(30px); /* This will produce the blur */
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.card .logo,
+.card .number,
+.card .name,
+.card .from,
+.card .to,
+.card .ring {
+  position: absolute; /* All items inside card should have absolute position */
+}
+
+.card .number,
+.card .name,
+.card .from,
+.card .to {
+  color: rgba(255, 255, 255, 0.897);
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+}
+.glassCard .logo {
+  top: 35px;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  right: 38px;
+  left: 300px;
+  width: 80px;
+  height: auto;
+  font-size: 35px;
+  opacity: 0.8;
+}
+.glassCard .number {
+  left: 40px;
+  bottom: 70px;
+  font-size: 25px;
+  font-family: "Nunito", sans-serif;
+}
+
+.glassCard .name {
+  font-size: 1.1rem;
+  left: 40px;
+  bottom: 35px;
+}
+
+.glassCard .from {
+  font-size: 1rem;
+  bottom: 35px;
+  right: 110px;
+}
+
+.glassCard .to {
+  font-size: 1rem;
+  bottom: 35px;
+  right: 40px;
+}
+.glassCard .ring {
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  background: transparent;
+  border: 50px solid rgba(255, 255, 255, 0.1);
+  bottom: -250px;
+  right: -250px;
+  box-sizing: border-box;
+}
+
+.glassCard .ring::after {
+  content: "";
+  position: absolute;
+  height: 600px;
+  width: 600px;
+  border-radius: 50%;
+  background: transparent;
+  border: 30px solid rgba(255, 255, 255, 0.1);
+  bottom: -80px;
+  right: -110px;
+  box-sizing: border-box;
+}
